@@ -1,10 +1,20 @@
 Goodwrks::Application.routes.draw do
   get "pages/about"
-
   get "pages/contact"
-  
   get "pages/news"
-
+  get "pages/institutions"
+  get "pages/people"
+  get "pages/merchants"
+	
+	
+	match '/about',		:to => "pages#about"
+	match '/contact', :to => "pages#contact"
+	match '/news',		:to => "pages#news"
+	match '/about',   :to => "pages#institutions"
+	match '/about',   :to => "pages#people"
+	match '/about',   :to => "pages#merchants"
+	root :to => 'pages#home'
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
