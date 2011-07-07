@@ -295,3 +295,8 @@ form.new_micropost textarea {
 .diagram td{
 	margin: 0px;
 }
+
+.diagram a:hover{
+	border-style: solid;
+	border-width: 2px;
+}
